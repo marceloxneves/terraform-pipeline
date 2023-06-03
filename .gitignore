@@ -1,0 +1,6 @@
+.terraform/
+*.tfstate
+*.out
+*.hcl
+aws-key
+aws-key.pub
