@@ -28,8 +28,8 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "curso-terraform-remote-state-marceloxneves"
-    key    = "aws-vpc/terraform.tfstate"
+    bucket = "marceloxneves"
+    key    = "aws-vm/terraform.tfstate"
     region = "us-east-1"
   }
 }
