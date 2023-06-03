@@ -25,6 +25,5 @@ resource "aws_instance" "vm" {
   #}
 }
 
-
 #para gerar as chaves: ssh-keygen -f aws-key (no proprio terminal do vscode dentro da pasta raiz)
 #para acessar a instância ec2 via terminal vscode: ssh -i aws-key ubuntu@[ip_retornado_vm_ip]
