@@ -7,8 +7,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "marceloxneves"
-    key    = "aws-vm/terraform.tfstate"
+    bucket = "curso-terraform-remote-state-marceloxneves"
+    key    = "aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
 }
@@ -28,8 +28,8 @@ provider "aws" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket = "marceloxneves"
-    key    = "aws-vm/terraform.tfstate"
+    bucket = "curso-terraform-remote-state-marceloxneves"
+    key    = "aws-vpc/terraform.tfstate"
     region = "us-east-1"
   }
 }
